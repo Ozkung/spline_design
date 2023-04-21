@@ -7,6 +7,10 @@ import axios from "axios";
 export default function tammer() {
   // watch text
   const [text, setText] = useState("");
+
+  const handleCheck = (param: string) => (event: any) => {
+    console.log("param", param);
+  };
   return (
     <>
       <main className={styles.main}>
@@ -23,6 +27,7 @@ export default function tammer() {
               }}
             />
           </div>
+          <button onClick={handleCheck(text)}>Check</button>
           <div>
             <Card title="checkmate" />
           </div>
