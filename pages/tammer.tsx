@@ -2,6 +2,7 @@ import styles from "@/styles/Home.module.css";
 import Layout from "@/layout/default";
 import { useState } from "react";
 import Card from "@/components/card";
+import axios from "axios";
 
 export default function tammer() {
   // watch text
